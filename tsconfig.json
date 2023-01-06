@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
     "rootDir": "./src",
+    "baseUrl": "./",
     "outDir": "./build/",
     "strictPropertyInitialization": false,
     "strictNullChecks": true,
@@ -10,8 +13,11 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "strict": true,
-    "noImplicitAny": false,
+    "noImplicitAny": false
   },
+  "lib": [
+    "es2015"
+  ],
   "include": [
     "src/**/*"
   ],
