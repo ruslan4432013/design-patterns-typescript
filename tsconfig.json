@@ -6,7 +6,7 @@
     "sourceMap": true,
     "rootDir": "./src",
     "baseUrl": "./",
-    "outDir": "./build/",
+    "outDir": "./build",
     "strictPropertyInitialization": false,
     "strictNullChecks": true,
     "target": "es6",
@@ -19,9 +19,10 @@
     "es2015"
   ],
   "include": [
-    "src/**/*"
+    "src/**/*.ts"
   ],
   "exclude": [
+    "build",
     "node_modules",
     "**/*.spec.ts"
   ]
